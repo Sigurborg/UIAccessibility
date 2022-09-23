@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Form lables -->
+        <form action="action_page.php">
+            <!-- I added section for the name and email. I aadded the aria-label in all fields -->
+            <section>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." aria-label="Enter your first name">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.."aria-label="Enter your last name ">
+      
+          <!-- Requerd field is marked with a * symbol -->
+          <label for="e-mail">E-mail *</label>
+          <select id="e-mail" name="e-mail" aria-label="Enter your e-mail address">
+            <option value="John">joe@joe.is</option>
+            <option value="Mary">mary@mary.is</option>
+          </select>
+        </section>
+      
+        <section>
+        <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write your thoughts.." style="height:200px"></textarea>
+          <!-- Input role to explain the submit button  -->
+          <input type="submit" input role="Continue here after you’ve filled out all form elements" value="Submit">
+        </section>  
+        </form>
+      </div>
+      
+    
+</body>
+</html>
